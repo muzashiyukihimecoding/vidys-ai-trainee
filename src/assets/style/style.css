@@ -1,0 +1,152 @@
+:root {
+   --primary: #8b3743;
+   --bg: #010101;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+body {
+   font-family: "Manrope", sans-serif;
+   background-color: var(--bg);
+   color: #fff;
+   /* padding-top: 7.5rem; */
+   padding: 7.5rem;
+}
+
+/* Navbar Styles */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.4rem 7%;
+   background-color: rgba(1, 1, 1, 0.8);
+   border-bottom: 1px solid var(--primary);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 9999;
+}
+
+/* 1. Navbar Logo */
+.navbar .navbar-logo {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #fff;
+   font-style: italic;
+   span {
+      color: var(--primary);
+   }
+}
+
+/* 2. Navbar Mid Nav */
+.navbar .navbar-nav a {
+   color: #fff;
+   display: inline-block;
+   font-size: 1.2rem;
+   margin: 0 1rem;
+   transition: 0.1s linear;
+}
+
+.navbar .navbar-nav a:hover {
+   color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+   content: "";
+   display: block;
+   padding-bottom: 0.5rem;
+   border-bottom: 0.1rem solid var(--primary);
+   transform: scaleX(0);
+   transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+   transform: scaleX(0.5);
+}
+
+/* 3. Navbar Right Menu - Extra*/
+.navbar .navbar-extra a {
+   color: #fff;
+   margin: 0 0.5rem;
+   transition: 0.1s linear;
+   font-size: 1.2rem;
+}
+
+.navbar .navbar-extra a:hover {
+   color: var(--primary);
+}
+
+/* 4. Navbar Buttons - Login or Sign Up */
+#hamburger-menu {
+   display: none;
+}
+/* Navbar End */
+/* Home.jsx */
+.p-4 {
+   font-size: large;
+}
+
+/* Media Queries Screen Responsive */
+/* 1. Laptop */
+@media (max-width: 1366px) {
+   html {
+      font-size: 75%;
+   }
+}
+
+/* 2. Tablet */
+@media (max-width: 768px) {
+   html {
+      font-size: 62.5%;
+   }
+
+   #hamburger-menu {
+      display: inline-block;
+   }
+
+   .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #fff;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+   }
+
+   .navbar .navbar-nav.active {
+      right: 0;
+   }
+
+   .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+      /* transition: 0.1s linear; */
+   }
+
+   .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+   }
+
+   .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+   }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+   html {
+      font-size: 55%;
+   }
+}
