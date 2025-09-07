@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 export default function App() {
    return (
       <Routes>
+         <Route path="/" element={<Home />} />
          <Route path="/home" element={<Home />} />
          <Route path="/about" element={<About />} />
          <Route path="/dashboard" element={<Dashboard />} />
