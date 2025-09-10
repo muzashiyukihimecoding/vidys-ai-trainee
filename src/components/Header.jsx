@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import feather from "feather-icons";
 import "../assets/style/style.css";
 
@@ -28,13 +29,13 @@ export default function Header() {
          </a>
 
          <div className="navbar-nav">
-            <a href="/home">Home</a>
-            <a href="/article">Article</a>
-            <a href="/concultacy">Concultacy</a>
-            <a href="/about">About Us</a>
-            <a href="/dashboard" id="dashboard">
+            <Link to="/home">Home</Link>
+            <Link to="/article">Article</Link>
+            <Link to="/concultacy">Concultacy</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/dashboard" id="dashboard">
                Dashboard
-            </a>
+            </Link>
          </div>
 
          <div className="navbar-extra">
