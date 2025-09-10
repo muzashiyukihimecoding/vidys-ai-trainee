@@ -39,8 +39,8 @@ export default function Header() {
          </div>
 
          <div className="navbar-extra">
-            <a href="#" id="search">
-               <i data-feather="search"></i>
+            <a href="#" id="user">
+               <i data-feather="user"></i>
             </a>
             <a href="#" id="hamburger-menu">
                <i data-feather="menu"></i>

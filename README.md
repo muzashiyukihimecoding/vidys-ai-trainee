@@ -1,4 +1,4 @@
-# Vidyadarma First AI Personal Trainer Mobile App
+# Vidyadarma First AI Personal Trainer Mobile App (Web Based App)
 
 # React + Vite
 
