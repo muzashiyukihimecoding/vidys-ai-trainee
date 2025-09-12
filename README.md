@@ -1,7 +1,19 @@
 # Vidyadarma First AI Personal Trainer Mobile App (Web Based App)
 
+Vidyadarma First Last Project of Samsung Academy : Samsung Solve for Tomorrow 2025
+
+Team Members:
+
+-  Dianwan Noven Nur Fauzian
+-  Rasyid Nabil Pujantara (me)
+-  Muhammad Yusron
+
+Do'akan kami supaya bisa garap aplikasi web ini yaa.. :D
+
+Preview Page : https://muzashiyukihimecoding.github.io/vidys-ai-trainee/
+
 # React + Vite
-halo saya Noven
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
