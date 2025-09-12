@@ -22,3 +22,6 @@ const aisaki = new Person("Lina", "Aisaki");
 muzashi.greetings("Maria");
 
 console.log(muzashi);
+
+const body = document.body;
+const toggleButton = document.querySelector(".toggle-dark-mode");
