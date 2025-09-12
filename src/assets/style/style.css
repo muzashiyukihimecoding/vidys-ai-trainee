@@ -17,7 +17,7 @@ body {
    background-color: var(--bg);
    color: #fff;
    /* padding-top: 7.5rem; */
-   padding: 7.5rem;
+   /* padding: 5.5rem 0; */
 }
 
 /* Navbar Styles */
@@ -25,7 +25,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1.4rem 7%;
+   padding: 1.4rem 10%;
    background-color: rgba(1, 1, 1, 0.8);
    border-bottom: 1px solid var(--primary);
    position: fixed;
@@ -89,11 +89,70 @@ body {
    display: none;
 }
 /* Navbar End */
-/* Home.jsx */
+
+/* General Page Styles */
 .p-4 {
    font-size: large;
+   text-align: center;
+   h1 {
+      padding: 4.5rem 0;
+   }
 }
 
+.container {
+   width: 90%;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+/* Home.jsx */
+.hero {
+   height: 100vh;
+   background: url("https://images.pexels.com/photos/4047154/pexels-photo-4047154.jpeg")
+      no-repeat center center rgba(0, 0, 0, 0.4);
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+   padding: 10%;
+}
+
+.hero-content {
+   text-align: center;
+   color: #fff;
+   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+   font-size: 3rem;
+   margin-bottom: 3rem;
+}
+
+.hero-content p {
+   font-size: 1.25rem;
+   margin-bottom: 1.5rem;
+}
+
+.features {
+   /* display: grid; */
+   display: flex;
+   flex-direction: column;
+   /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+   gap: 4rem;
+   margin: 4rem;
+   /* padding: 4rem; */
+}
+
+.feature {
+   background: var(--primary);
+   padding: 2rem;
+   border-radius: 8px;
+   text-align: center;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 /* Article */
 
 /* Concultacy.jsx */
@@ -101,64 +160,3 @@ body {
 /* About.jsx */
 
 /* Dashboard.jsx */
-
-/* Media Queries Screen Responsive */
-/* 1. Laptop */
-@media (max-width: 1366px) {
-   html {
-      font-size: 75%;
-   }
-}
-
-/* 2. Tablet */
-@media (max-width: 768px) {
-   html {
-      font-size: 62.5%;
-   }
-
-   #hamburger-menu {
-      display: inline-block;
-   }
-
-   .navbar .navbar-nav {
-      position: absolute;
-      top: 100%;
-      right: -100%;
-      /* background-color: #fff; */
-      background-color: var(--bg);
-      border-left: 1px solid var(--primary);
-      border-top: 1px solid var(--primary);
-      width: 30rem;
-      height: 100vh;
-      transition: 0.3s;
-   }
-
-   .navbar .navbar-nav.active {
-      right: 0;
-   }
-
-   .navbar .navbar-nav a {
-      /* color: var(--bg); */
-      color: #fff;
-      display: block;
-      margin: 1.5rem;
-      padding: 0.5rem;
-      font-size: 2rem;
-      /* transition: 0.1s linear; */
-   }
-
-   .navbar .navbar-nav a::after {
-      transform-origin: 0 0;
-   }
-
-   .navbar .navbar-nav a:hover::after {
-      transform: scaleX(0.2);
-   }
-}
-
-/* Mobile Phone */
-@media (max-width: 450px) {
-   html {
-      font-size: 55%;
-   }
-}
