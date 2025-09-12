@@ -10,7 +10,7 @@
       "lint": "eslint .",
       "preview": "vite preview",
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist -m \"deploy: update features\""
+      "deploy": "gh-pages -d dist -m \"deploy: feat: welcome banner - preparing feature sections\""
    },
    "dependencies": {
       "feather-icons": "^4.29.2",

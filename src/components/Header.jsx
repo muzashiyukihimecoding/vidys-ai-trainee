@@ -31,9 +31,9 @@ export default function Header() {
 
          <div className="navbar-nav">
             <Link to="/home">Home</Link>
+            <Link to="/about">About Us</Link>
             <Link to="/article">Article</Link>
             <Link to="/concultacy">Concultacy</Link>
-            <Link to="/about">About Us</Link>
             <Link to="/dashboard" id="dashboard">
                Dashboard
             </Link>
