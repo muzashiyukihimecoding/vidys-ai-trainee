@@ -1,11 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import None404 from "./404";
 
 export default function Dashboard() {
    return (
       <>
          <Header />
-         <div className="wrapper">
+         {/* <div className="wrapper">
             <main className="p-4">
                <h1>Dashboard</h1>
                <p>Selamat Datang di Dashboard Pribadi Anda.</p>
@@ -14,8 +15,9 @@ export default function Dashboard() {
                   dan daftar rencana kesehatan Anda
                </p>
             </main>
-         </div>
-         {/* <Footer /> */}
+         </div> */}
+         <None404 />
+         <Footer />
       </>
    );
 }
