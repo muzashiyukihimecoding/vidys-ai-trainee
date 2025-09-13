@@ -324,7 +324,7 @@ main {
 
 /* Footer start */
 footer {
-   position: sticky;
+   /* position: sticky; */
    bottom: 0;
    left: 0;
    width: 100%;
