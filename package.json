@@ -10,7 +10,7 @@
       "lint": "eslint .",
       "preview": "vite preview",
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist -m \"deploy: build: pages: 404 not found-concultacy page-page stylings\""
+      "deploy": "gh-pages -d dist -m \"deploy: build: server backend for ai chatbot api\""
    },
    "dependencies": {
       "feather-icons": "^4.29.2",
