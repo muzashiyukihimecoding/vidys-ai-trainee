@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { sendMessage } from "../services/api";
+// import { send } from "vite";
 
 export default function ChatBot() {
    const [messages, setMessages] = useState([]);
    const [input, setInput] = useState("");
 
-   // Dummy fungsi AI sementara (nanti diganti askGemini)
-   async function getAIResponse(prompt) {
-      return "Ini jawaban AI untuk: " + prompt;
-   }
+   // // Dummy fungsi AI sementara (nanti diganti askGemini)
+   // async function getAIResponse(prompt) {
+   //    return "Ini jawaban AI untuk: " + prompt;
+   // }
 
    async function handleSend(e) {
       e.preventDefault();
@@ -15,11 +17,19 @@ export default function ChatBot() {
 
       const newMsg = { sender: "user", text: input };
       setMessages((prev) => [...prev, newMsg]);
-
-      const reply = await getAIResponse(input);
-      setMessages((prev) => [...prev, newMsg, { sender: "ai", text: reply }]);
-
       setInput("");
+
+      // const reply = await getAIResponse(input);
+      // setMessages((prev) => [...prev, newMsg, { sender: "ai", text: reply }]);
+
+      // calling Backend
+      const data = await sendMessage(newMsg.text);
+      const aiMsg = { sender: "ai", text: data.reply };
+
+      // ChatGPT Answering
+      // const reply = data?.choices?.[0]?.message?.content || "No response";
+
+      setMessages((prev) => [...prev, newMsg, aiMsg]);
    }
 
    return (
@@ -27,7 +37,7 @@ export default function ChatBot() {
          style={{
             display: "flex",
             flexDirection: "column",
-            height: "100vh",
+            height: "85vh",
             background: "#121212",
             color: "white",
          }}
@@ -41,7 +51,7 @@ export default function ChatBot() {
                fontWeight: "bold",
             }}
          >
-            AI Konsultasi
+            <h2>Vidys Consult</h2>
          </div>
 
          {/* Chat Area */}

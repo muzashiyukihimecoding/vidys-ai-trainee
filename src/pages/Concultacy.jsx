@@ -7,7 +7,8 @@ export default function Concultacy() {
    return (
       <>
          <Header />
-         <None404 />
+         {/* <None404 /> */}
+         <ChatBot />
          <Footer />
       </>
    );

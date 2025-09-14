@@ -4,6 +4,7 @@ import Article from "./pages/Article";
 import Concultacy from "./pages/Concultacy";
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
+import ChatBot from "./components/Chat";
 
 export default function App() {
    return (
