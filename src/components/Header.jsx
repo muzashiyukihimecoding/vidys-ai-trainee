@@ -23,6 +23,14 @@ export default function Header() {
       });
    }, []);
 
+   const navItems = [
+      { path: "/home", label: "Home" },
+      { path: "/about", label: "About Us" },
+      { path: "/article", label: "Articles" },
+      { path: "/concultacy", label: "AI Consultacy" },
+      { path: "/dashboard", label: "Dashboard" },
+   ];
+
    return (
       <nav className="navbar">
          <a href="/" className="navbar-logo">
@@ -30,6 +38,18 @@ export default function Header() {
          </a>
 
          <div className="navbar-nav">
+            {/* New Navbar */}
+            {/* <ul>
+               {navItems.map((item) => {
+                  <li key={item.path}>
+                     <NavLink to={item.path} className={navClass}>
+                        {item.label}
+                     </NavLink>
+                  </li>;
+               })}
+            </ul> */}
+
+            {/* Previous Navbar */}
             <Link to="/home">Home</Link>
             <Link to="/about">About Us</Link>
             <Link to="/article">Article</Link>

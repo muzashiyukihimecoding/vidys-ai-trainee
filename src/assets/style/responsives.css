@@ -62,4 +62,15 @@
    html {
       font-size: 55%;
    }
+
+   .features {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 280px) {
+   .navbar {
+      flex-direction: column;
+      gap: 1rem;
+   }
 }
