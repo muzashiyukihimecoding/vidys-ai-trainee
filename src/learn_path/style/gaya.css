@@ -1,0 +1,81 @@
+/* Root Variable */
+:root {
+   --bg: black;
+}
+
+/* Body */
+body {
+   background-color: var(--bg);
+   color: white;
+   padding: 2rem;
+}
+
+h1 {
+   text-align: center;
+}
+
+.para {
+   text-align: center;
+   .paradiv-1 {
+      color: lightblue;
+   }
+   .paradiv-2 {
+      color: lightyellow;
+   }
+}
+
+/* Lists */
+.lists {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+   gap: 2rem;
+}
+
+.lists .list-field {
+   background: purple;
+   padding: 2rem;
+   border: none;
+   border-radius: 0.5rem;
+}
+
+/* Table */
+.table-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem auto;
+}
+
+.table-section .table {
+   /* border: 1px solid #fff; */
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+/* Forms */
+
+.form legend {
+   text-align: center;
+}
+
+.form .form-field {
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   gap: 2rem;
+   background: #3a6f43;
+   border: none;
+   border-radius: 1.5rem;
+}
+
+.form .form-field #inputs {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem auto;
+   gap: 0.5rem;
+}

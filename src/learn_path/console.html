@@ -24,12 +24,88 @@
                voluptate expedita unde perspiciatis earum.
             </p>
          </div>
-         <div class="buttons">
-            <button class="toggle-dark-mode">Dark Mode</button>
+         <br />
+
+         <!-- List Orders -->
+         <div class="lists">
+            <div class="list-field">
+               <h1>My Kawaii Ops</h1>
+               <ul type="1">
+                  <li>Suzuran</li>
+                  <li>Caper</li>
+                  <li>Exusiai</li>
+                  <li>Rosmontis</li>
+                  <li>Silence</li>
+                  <li>Ptilopsis</li>
+               </ul>
+            </div>
+            <div class="list-field">
+               <h1>My Programming <br />Languages</h1>
+               <ol type="1">
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+               </ol>
+            </div>
          </div>
 
-         <br />
-         <img src="./artileri.jpeg" alt="" />
+         <!-- Tables -->
+         <div class="table-section">
+            <table class="table" border="1" cellpadding="10">
+               <tr>
+                  <th rowspan="2">Pulls</th>
+                  <th colspan="2">Arknights Chara</th>
+               </tr>
+               <tr>
+                  <td>Operator</td>
+                  <td>Role</td>
+               </tr>
+               <tr id="Operator">
+                  <td>Orienting</td>
+                  <td>Suzuran</td>
+                  <td>Supporter</td>
+               </tr>
+               <tr>
+                  <td>EPOQUE</td>
+                  <td>Nightmare</td>
+                  <td>Caster</td>
+               </tr>
+            </table>
+         </div>
+
+         <!-- Form -->
+         <section class="form">
+            <form action="login.php" method="POST">
+               <!-- <fieldset> -->
+                  <legend>Login</legend>
+                  <div class="form-field">
+                     <div id="inputs">
+                        <label for="username">Username</label>
+                        <input
+                           type="text"
+                           name="username"
+                           placeholder="username..."
+                        />
+                     </div id="inputs">
+                     <div id="inputs">
+                        <label for="password">Password</label>
+                        <input
+                           type="password"
+                           name="password"
+                           placeholder="password..."
+                        />
+                     </div id="inputs">
+                     <div id="inputs">
+                        <label for="remember-me"><input type="checkbox" name="remember-me" value="remember-me"/>Remember Me
+                     </div id="inputs">
+                     <div id="inputs">
+                        <input type="submit" name="submit" value="Login">
+                     </div id="inputs">
+                  </div>
+               <!-- </fieldset> -->
+            </form>
+         </section>
       </main>
 
       <!-- Scripts -->

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Mini Blue Archive Style</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         body {
+            font-family: "Segoe UI", sans-serif;
+            background: #0a0f1e;
+            color: white;
+            overflow-x: hidden;
+         }
+
+         /* NAVBAR */
+         header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+         }
+         .logo {
+            font-weight: bold;
+            font-size: 22px;
+            color: #4ec7ff;
+         }
+         nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+         }
+         nav a:hover {
+            color: #4ec7ff;
+         }
+
+         /* HERO SECTION */
+         .hero {
+            height: 100vh;
+            background: url("https://picsum.photos/1920/1080?blur=2")
+               center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+         }
+         .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+         }
+         .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            padding: 20px;
+            animation: fadeUp 1.2s ease-out;
+         }
+         .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+         }
+         .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #e0f7ff;
+         }
+         .btn {
+            padding: 12px 28px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            background: #4ec7ff;
+            color: #0a0f1e;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+         }
+         .btn:hover {
+            background: #2aa5d9;
+            transform: scale(1.05);
+         }
+
+         @keyframes fadeUp {
+            from {
+               opacity: 0;
+               transform: translateY(40px);
+            }
+            to {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+
+         /* SECTION GRID */
+         section.features {
+            background: #12182b;
+            padding: 80px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+         }
+         .card {
+            background: #1b233c;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+         }
+         .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+         }
+         .card h3 {
+            color: #4ec7ff;
+            margin-bottom: 12px;
+         }
+
+         /* FOOTER */
+         footer {
+            background: #0a0f1e;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: #888;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="logo">Mini Archive</div>
+         <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Karakter</a>
+            <a href="#">Berita</a>
+            <a href="#">Download</a>
+         </nav>
+      </header>
+
+      <section class="hero">
+         <div class="overlay"></div>
+         <div class="hero-content">
+            <h1>Selamat Datang di Mini Archive</h1>
+            <p>
+               Versi ringan terinspirasi Blue Archive. Simple, modern, dan
+               responsive.
+            </p>
+            <button class="btn">Mulai Petualangan</button>
+         </div>
+      </section>
+
+      <section class="features">
+         <div class="card">
+            <h3>Karakter</h3>
+            <p>Koleksi karakter unik dengan style khas anime.</p>
+         </div>
+         <div class="card">
+            <h3>Event</h3>
+            <p>Acara spesial dengan hadiah menarik dan cerita baru.</p>
+         </div>
+         <div class="card">
+            <h3>Komunitas</h3>
+            <p>Bergabung dengan pemain lain dan bentuk guild-mu.</p>
+         </div>
+      </section>
+
+      <footer>© 2025 Mini Archive — dibuat untuk eksperimen tampilan</footer>
+   </body>
+</html>

@@ -10,7 +10,7 @@
       "lint": "eslint .",
       "preview": "vite preview",
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist -m \"deploy (rebuild): mobile-tablet display fixing\"",
+      "deploy": "gh-pages -d dist -m \"build: dashboard page. workout card and AI chat widgets\"",
       "server": "node server.js"
    },
    "dependencies": {
